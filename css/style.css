@@ -77,8 +77,12 @@ body {
   width: auto;
   height: auto;
   margin-left: 35%;
-  margin-right: 35%; }
+  margin-right: 35%;
+  color: #e8cfc1; }
+  .carrusel .carrusel-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .carrusel h5 {
     color: #ff3e3e; }
-  .carrusel p {
-    color: #e8cfc1; }

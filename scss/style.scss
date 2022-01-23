@@ -105,10 +105,14 @@ body{
     height: auto;
     margin-left: 35%;
     margin-right: 35%;
+    color: $colorPrimarioTexto;
+    .carrusel-titulos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     h5{
         color: $colorRojoTexto;
-    }
-    p{
-        color: $colorPrimarioTexto;
     }
 }
