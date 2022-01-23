@@ -1,0 +1,84 @@
+body {
+  background-color: #a77009; }
+
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  background-color: #523e26; }
+  .nav .nav-link {
+    color: #e8cfc1; }
+    .nav .nav-link.active {
+      color: #ce6957; }
+      .nav .nav-link.active:hover {
+        color: #a77009; }
+    .nav .nav-link:hover {
+      color: #a77009; }
+
+.presentacion {
+  display: grid;
+  grid-template-areas: "imagen-top imagen-top imagen-top" "titulos titulos alan";
+  background-image: url("../fotos/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #e8cfc1; }
+  .presentacion .titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+    grid-area: titulos; }
+    .presentacion .titulos .guerra {
+      color: #ff3e3e; }
+  .presentacion .imagen {
+    background-image: url("../fotos/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: alan; }
+  .presentacion .imagen-top {
+    background-image: url("../fotos/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 23px;
+    grid-area: imagen-top; }
+
+.video {
+  display: grid;
+  grid-template-areas: "titulos trailer";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #e8cfc1; }
+  .video .video-titulos {
+    grid-area: titulos;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%; }
+    .video .video-titulos .futuro {
+      color: #ff3e3e; }
+    .video .video-titulos h5 {
+      color: #f2be99; }
+  .video .video-trailer {
+    height: 250px;
+    grid-area: trailer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15%; }
+    .video .video-trailer iframe {
+      max-width: 100%;
+      max-height: 100%; }
+
+.carrusel {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin-left: 35%;
+  margin-right: 35%; }
+  .carrusel h5 {
+    color: #ff3e3e; }
+  .carrusel p {
+    color: #e8cfc1; }
