@@ -89,7 +89,7 @@ body {
     color: #ff3e3e; }
 
 .conoceme {
-  height: 600px;
+  height: 633px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,6 +105,123 @@ body {
     margin-left: 15%; }
   .conoceme .conoceme-texto {
     margin-top: 5%; }
+
+.opiniones {
+  margin-top: 5%;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "joan peter hugh";
+  color: #e8cfc1; }
+  .opiniones h1 {
+    grid-area: titulo; }
+  .opiniones h5 {
+    color: #ff3e3e; }
+  .opiniones .opiniones-joan {
+    margin-top: 5%;
+    margin: 3%;
+    grid-area: joan;
+    background-color: #d67747;
+    display: grid;
+    grid-template-areas: "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas" "texto texto texto texto texto texto texto texto texto texto"; }
+    .opiniones .opiniones-joan .opiniones-joan-foto {
+      grid-area: foto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-joan .opiniones-joan-nombre-pais {
+      grid-area: nombre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-joan .opiniones-joan-estrellas {
+      grid-area: estrellas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-joan .opiniones-joan-texto {
+      grid-area: texto;
+      margin: 5%; }
+  .opiniones .opiniones-peter {
+    margin-top: 5%;
+    margin: 3%;
+    grid-area: peter;
+    background-color: #d67747;
+    display: grid;
+    grid-template-areas: "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas" "texto texto texto texto texto texto texto texto texto texto"; }
+    .opiniones .opiniones-peter .opiniones-peter-foto {
+      grid-area: foto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-peter .opiniones-peter-nombre-pais {
+      grid-area: nombre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-peter .opiniones-peter-estrellas {
+      grid-area: estrellas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-peter .opiniones-peter-texto {
+      grid-area: texto;
+      margin: 5%; }
+  .opiniones .opiniones-hugh {
+    margin-top: 5%;
+    margin: 3%;
+    grid-area: hugh;
+    background-color: #d67747;
+    display: grid;
+    grid-template-areas: "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas" "texto texto texto texto texto texto texto texto texto texto"; }
+    .opiniones .opiniones-hugh .opiniones-hugh-foto {
+      grid-area: foto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-hugh .opiniones-hugh-nombre-pais {
+      grid-area: nombre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-hugh .opiniones-hugh-estrellas {
+      grid-area: estrellas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .opiniones .opiniones-hugh .opiniones-hugh-texto {
+      grid-area: texto;
+      margin: 5%; }
+
+.formulario {
+  height: 633px;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../fotos/fondo-formulario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "imagen formulario";
+  color: #f2be99; }
+  .formulario .formulario-imagen {
+    margin: 5%;
+    grid-area: imagen; }
+  .formulario .formulario-excel {
+    margin: 5%;
+    grid-area: formulario; }
+    .formulario .formulario-excel .mb-3 {
+      margin: 5%;
+      display: flex;
+      justify-content: center; }
+      .formulario .formulario-excel .mb-3 .form-control {
+        width: 50%; }
+    .formulario .formulario-excel .boton {
+      display: flex;
+      justify-content: center; }
+      .formulario .formulario-excel .boton button {
+        background-color: #ff3e3e;
+        border: none;
+        color: #e8cfc1; }
 
 @media screen and (max-width: 768px) {
   .carrusel .d-md-block {

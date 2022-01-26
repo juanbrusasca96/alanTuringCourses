@@ -4,6 +4,7 @@ $colorSecundarioTexto: rgb(242, 190, 153);
 $colorRojoTexto: rgb(255, 62, 62);
 $backgroundColor: rgb(167, 112, 9);
 $backgroundColorSecundario: rgb(82, 62, 38);
+$backgroundColorTerciario: rgb(214, 119, 71);
 
 body{
     background-color: $backgroundColor;
@@ -119,7 +120,7 @@ body{
 }
 
 .conoceme{
-    height: 600px;
+    height: 633px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,6 +138,157 @@ body{
     }
     .conoceme-texto{
         margin-top: 5%;
+    }
+}
+
+.opiniones{
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "joan peter hugh";
+    color: $colorPrimarioTexto;
+    h1{
+        grid-area: titulo;
+    }
+    h5{
+        color: $colorRojoTexto;
+    }
+    .opiniones-joan{
+        margin-top: 5%;
+        margin: 3%;
+        grid-area: joan;
+        background-color: $backgroundColorTerciario;
+        display: grid;
+        grid-template-areas: 
+        "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas"
+        "texto texto texto texto texto texto texto texto texto texto";
+        .opiniones-joan-foto{
+            grid-area: foto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-joan-nombre-pais{
+            grid-area: nombre;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-joan-estrellas{
+            grid-area: estrellas;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-joan-texto{
+            grid-area: texto;
+            margin: 5%;
+        }
+    }
+    .opiniones-peter{
+        margin-top: 5%;
+        margin: 3%;
+        grid-area: peter;
+        background-color: $backgroundColorTerciario;
+        display: grid;
+        grid-template-areas: 
+        "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas"
+        "texto texto texto texto texto texto texto texto texto texto";
+        .opiniones-peter-foto{
+            grid-area: foto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-peter-nombre-pais{
+            grid-area: nombre;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-peter-estrellas{
+            grid-area: estrellas;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-peter-texto{
+            grid-area: texto;
+            margin: 5%;
+        }
+    }
+    .opiniones-hugh{
+        margin-top: 5%;
+        margin: 3%;
+        grid-area: hugh;
+        background-color: $backgroundColorTerciario;
+        display: grid;
+        grid-template-areas: 
+        "foto nombre nombre nombre nombre nombre estrellas estrellas estrellas estrellas"
+        "texto texto texto texto texto texto texto texto texto texto";
+        .opiniones-hugh-foto{
+            grid-area: foto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-hugh-nombre-pais{
+            grid-area: nombre;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-hugh-estrellas{
+            grid-area: estrellas;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .opiniones-hugh-texto{
+            grid-area: texto;
+            margin: 5%;
+        }
+    }
+}
+
+.formulario{
+    height: 633px;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../fotos/fondo-formulario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "imagen formulario";   
+    color: $colorSecundarioTexto;
+    .formulario-imagen{
+        margin: 5%;
+        grid-area: imagen;
+    }
+    .formulario-excel{
+        margin: 5%;
+        grid-area: formulario;
+        .mb-3{
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            .form-control{
+                width: 50%;
+            }
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+            button{
+                background-color: $colorRojoTexto;
+                border: none;
+                color: $colorPrimarioTexto;
+            }
+        }
     }
 }
 
