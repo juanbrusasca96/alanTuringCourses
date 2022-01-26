@@ -296,5 +296,13 @@
     "write-file-atomic": "^3.0.3",
     "yargs": "^17.3.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanbrusasca96/final-desarrollo-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juanbrusasca96/final-desarrollo-web/issues"
+  },
+  "homepage": "https://github.com/juanbrusasca96/final-desarrollo-web#readme",
   "description": ""
 }

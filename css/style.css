@@ -83,6 +83,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10%; }
   .carrusel h5 {
     color: #ff3e3e; }
+
+.conoceme {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #e8cfc1;
+  margin-top: 5%;
+  background-image: url("../fotos/conoceme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .conoceme h1 {
+    color: #f2be99; }
+  .conoceme .conoceme-titulos-y-texto {
+    margin-left: 15%; }
+  .conoceme .conoceme-texto {
+    margin-top: 5%; }
+
+@media screen and (max-width: 768px) {
+  .carrusel .d-md-block {
+    display: block !important; }
+  .carrusel p {
+    font-size: x-small; } }
+
+@media screen and (max-width: 500px) {
+  .carrusel .carousel-caption {
+    position: static; } }

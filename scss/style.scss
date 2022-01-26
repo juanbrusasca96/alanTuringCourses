@@ -111,8 +111,50 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10%;
     }
     h5{
         color: $colorRojoTexto;
+    }
+}
+
+.conoceme{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $colorPrimarioTexto;
+    margin-top: 5%;
+    background-image: url("../fotos/conoceme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        color: $colorSecundarioTexto;
+    }
+    .conoceme-titulos-y-texto{
+        margin-left: 15%;
+    }
+    .conoceme-texto{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carrusel{
+        .d-md-block{
+            display: block!important;
+        }
+        p{
+            font-size: x-small;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .carrusel{
+        .carousel-caption{
+            position: static;
+        }
     }
 }
