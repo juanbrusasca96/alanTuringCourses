@@ -251,9 +251,9 @@ body {
   h5 {
     font-size: small; }
   h6 {
-    font-size: smaller; }
+    font-size: small; }
   p {
-    font-size: x-small; }
+    font-size: small; }
   .carrusel {
     margin-left: 15%;
     margin-right: 15%; }
@@ -269,10 +269,6 @@ body {
     font-size: medium; }
   h4 {
     font-size: small; }
-  h5 {
-    font-size: smaller; }
-  h6 {
-    font-size: x-small; }
   .video {
     display: flex;
     flex-direction: column; }
