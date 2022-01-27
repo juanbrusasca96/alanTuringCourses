@@ -400,16 +400,16 @@ body{
         margin-left: 10%;
         margin-right: 10%;
     }
+    
+    .opiniones{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 300px){
     .carrusel{
         margin-left: 5%;
         margin-right: 5%;
-    }
-
-    .opiniones{
-        display: flex;
-        flex-direction: column;
     }
 }
