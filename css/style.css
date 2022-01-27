@@ -273,8 +273,6 @@ body {
     font-size: smaller; }
   h6 {
     font-size: x-small; }
-  p {
-    font-size: xx-small; }
   .video {
     display: flex;
     flex-direction: column; }
