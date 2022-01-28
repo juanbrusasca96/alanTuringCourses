@@ -1,19 +1,58 @@
 body {
   background-color: #a77009; }
 
-.nav {
+header {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
   text-align: center;
-  background-color: #523e26; }
-  .nav .nav-link {
+  background-color: #523e26;
+  color: #e8cfc1; }
+  header a {
+    font-size: larger; }
+  header .navbar-brand {
+    font-size: larger; }
+  header .bg-light {
+    --bs-bg-opacity: 0;
+    background-color: #523e26 !important; }
+  header .navbar-light .navbar-brand {
     color: #e8cfc1; }
-    .nav .nav-link.active {
-      color: #ce6957; }
-      .nav .nav-link.active:hover {
-        color: #a77009; }
-    .nav .nav-link:hover {
+    header .navbar-light .navbar-brand:hover {
       color: #a77009; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #e8cfc1; }
+    header .navbar-light .navbar-nav .nav-link:hover {
+      color: #a77009; }
+  header .dropdown-menu {
+    background-color: #523e26;
+    color: #e8cfc1; }
+    header .dropdown-menu:hover {
+      color: #a77009; }
+  header .dropdown-item {
+    color: #e8cfc1; }
+    header .dropdown-item:hover {
+      color: #a77009;
+      background-color: #523e26; }
+      header .dropdown-item:hover.active {
+        color: #ce6957; }
+        header .dropdown-item:hover.active:hover {
+          color: #a77009; }
+  header .dropdown-item.active, header .dropdown-item:active {
+    color: #e8cfc1;
+    text-decoration: none;
+    background-color: #523e26; }
+  header .navbar-light .navbar-nav .nav-link.active, header .navbar-light .navbar-nav .show > .nav-link {
+    color: #e8cfc1; }
+    header .navbar-light .navbar-nav .nav-link.active:hover, header .navbar-light .navbar-nav .show > .nav-link:hover {
+      color: #a77009; }
+    header .navbar-light .navbar-nav .nav-link.active.active, header .navbar-light .navbar-nav .show > .nav-link.active {
+      color: #ce6957; }
+      header .navbar-light .navbar-nav .nav-link.active.active:hover, header .navbar-light .navbar-nav .show > .nav-link.active:hover {
+        color: #a77009; }
+  header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
+    color: #e8cfc1; }
+  header nav .nav-imagen {
+    width: 10%;
+    margin-left: 1%; }
 
 .presentacion {
   display: grid;
@@ -30,7 +69,7 @@ body {
     margin-right: 18%;
     grid-area: titulos; }
     .presentacion .titulos .guerra {
-      color: #ff3e3e; }
+      color: #ff4949; }
   .presentacion .imagen {
     background-image: url("../fotos/fondo3.jpg");
     background-repeat: no-repeat;
@@ -58,7 +97,7 @@ body {
     justify-content: center;
     margin-left: 15%; }
     .video .video-titulos .futuro {
-      color: #ff3e3e; }
+      color: #ff4949; }
     .video .video-titulos h5 {
       color: #f2be99; }
   .video .video-trailer {
@@ -87,7 +126,7 @@ body {
     align-items: center;
     margin-top: 10%; }
   .carrusel h5 {
-    color: #ff3e3e; }
+    color: #ff4949; }
 
 .conoceme {
   height: 633px;
@@ -115,7 +154,7 @@ body {
   .opiniones .opiniones-titulos {
     grid-area: titulo; }
   .opiniones h5 {
-    color: #ff3e3e; }
+    color: #ff4949; }
   .opiniones .opiniones-joan {
     margin-top: 5%;
     margin: 3%;
@@ -220,9 +259,18 @@ body {
       display: flex;
       justify-content: center; }
       .formulario .formulario-excel .boton button {
-        background-color: #ff3e3e;
+        background-color: #ff4949;
         border: none;
         color: #e8cfc1; }
+
+.pie {
+  padding: 2px;
+  background-color: #523e26;
+  color: #e8cfc1; }
+  .pie .pie-imagenes {
+    margin: 1%; }
+  .pie p {
+    margin: 1%; }
 
 @media screen and (max-width: 987px) {
   .video .video-titulos {
@@ -261,6 +309,9 @@ body {
       display: block !important; } }
 
 @media screen and (max-width: 570px) {
+  header nav .nav-imagen img {
+    width: 40px;
+    height: 44px; }
   h1 {
     font-size: larger; }
   h2 {
@@ -280,6 +331,13 @@ body {
     flex-direction: column; } }
 
 @media screen and (max-width: 300px) {
+  header a {
+    font-size: medium; }
+  header .navbar-brand {
+    font-size: medium; }
+  header nav .nav-imagen img {
+    width: 30px;
+    height: 34px; }
   .carrusel {
     margin-left: 5%;
     margin-right: 5%; } }
