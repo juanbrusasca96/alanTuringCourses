@@ -37,7 +37,7 @@ header {
         header .dropdown-item:hover.active:hover {
           color: #a77009; }
   header .dropdown-item.active, header .dropdown-item:active {
-    color: #e8cfc1;
+    color: #ce6957;
     text-decoration: none;
     background-color: #523e26; }
   header .navbar-light .navbar-nav .nav-link.active, header .navbar-light .navbar-nav .show > .nav-link {
@@ -50,9 +50,13 @@ header {
         color: #a77009; }
   header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
     color: #e8cfc1; }
+  header .navbar-brand:focus {
+    color: #e8cfc1; }
   header nav .nav-imagen {
-    width: 10%;
+    width: 8%;
     margin-left: 1%; }
+  header .navbar-light .navbar-nav .nav-link:hover {
+    color: #a77009; }
 
 .presentacion {
   display: grid;
@@ -272,6 +276,107 @@ header {
   .pie p {
     margin: 1%; }
 
+.texto-general {
+  margin: 1%;
+  color: #e8cfc1;
+  background-color: #d67747; }
+  .texto-general p {
+    margin: 2%; }
+
+.biografia-card {
+  display: grid;
+  grid-template-areas: "texto imagen"; }
+  .biografia-card .biografia-card-texto {
+    grid-area: texto; }
+  .biografia-card .card {
+    margin: 2%;
+    grid-area: imagen;
+    background-color: #d67747;
+    border: 1px solid #e8cfc1; }
+    .biografia-card .card img {
+      max-width: 150px;
+      max-height: 160px; }
+    .biografia-card .card .card-body {
+      max-width: 150px; }
+
+.logros-card {
+  display: grid;
+  grid-template-areas: "imagen texto"; }
+  .logros-card .logros-card-texto {
+    grid-area: texto; }
+  .logros-card .card {
+    margin: 2%;
+    grid-area: imagen;
+    background-color: #d67747;
+    border: 1px solid #e8cfc1; }
+    .logros-card .card img {
+      max-width: 300px;
+      max-height: 310px; }
+    .logros-card .card .card-body {
+      max-width: 300px; }
+
+.reconocimiento-card-casa {
+  display: grid;
+  grid-template-areas: "texto imagen"; }
+  .reconocimiento-card-casa .reconocimiento-card-casa-texto {
+    grid-area: texto; }
+  .reconocimiento-card-casa .card {
+    margin: 2%;
+    grid-area: imagen;
+    background-color: #d67747;
+    border: 1px solid #e8cfc1; }
+    .reconocimiento-card-casa .card img {
+      max-width: 200px;
+      max-height: 210px; }
+    .reconocimiento-card-casa .card .card-body {
+      max-width: 200px; }
+
+.reconocimiento-card-universidad {
+  display: grid;
+  grid-template-areas: "imagen texto"; }
+  .reconocimiento-card-universidad .reconocimiento-card-universidad-texto {
+    grid-area: texto; }
+  .reconocimiento-card-universidad .card {
+    margin: 2%;
+    grid-area: imagen;
+    background-color: #d67747;
+    border: 1px solid #e8cfc1; }
+    .reconocimiento-card-universidad .card img {
+      max-width: 150px;
+      max-height: 200px; }
+    .reconocimiento-card-universidad .card .card-body {
+      max-width: 150px; }
+
+.reconocimiento-carrusel {
+  max-height: 633px;
+  margin-top: 2%;
+  background-image: url("../fotos/reconocimiento-fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e8cfc1; }
+  .reconocimiento-carrusel h2 {
+    margin: 2%; }
+  .reconocimiento-carrusel .carousel-item {
+    height: 500px;
+    max-width: 900px;
+    margin-top: 3%; }
+    .reconocimiento-carrusel .carousel-item img {
+      max-width: 900px;
+      max-height: 400px; }
+  .reconocimiento-carrusel .carousel-inner {
+    display: flex;
+    justify-content: center; }
+  .reconocimiento-carrusel .carousel-control-prev {
+    display: flex;
+    justify-content: flex-end; }
+  .reconocimiento-carrusel .carousel-control-next {
+    display: flex;
+    justify-content: flex-start; }
+  .reconocimiento-carrusel .carousel-caption {
+    color: #e8cfc1; }
+  .reconocimiento-carrusel .carousel-indicators [data-bs-target] {
+    background-color: #e8cfc1; }
+
 @media screen and (max-width: 987px) {
   .video .video-titulos {
     margin-left: 5%; }
@@ -306,7 +411,15 @@ header {
     margin-left: 15%;
     margin-right: 15%; }
     .carrusel .d-md-block {
-      display: block !important; } }
+      display: block !important; }
+  .reconocimiento-carrusel .carousel-item {
+    height: 410px; }
+  .reconocimiento-carrusel .carousel-control-next, .reconocimiento-carrusel .carousel-control-prev {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30%; }
+  .reconocimiento-carrusel .d-none {
+    display: block !important; } }
 
 @media screen and (max-width: 570px) {
   header nav .nav-imagen img {
@@ -328,7 +441,33 @@ header {
     margin-right: 10%; }
   .opiniones {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .logros-card {
+    display: flex;
+    flex-direction: column; }
+    .logros-card .card {
+      max-width: 300px; }
+  .reconocimiento-carrusel .carousel-item {
+    height: 350px; } }
+
+@media screen and (max-width: 400px) {
+  .biografia-card {
+    display: flex;
+    flex-direction: column; }
+    .biografia-card .card {
+      max-width: 150px; }
+  .reconocimiento-card-casa {
+    display: flex;
+    flex-direction: column; }
+    .reconocimiento-card-casa .card {
+      max-width: 200px; }
+  .reconocimiento-card-universidad {
+    display: flex;
+    flex-direction: column; }
+    .reconocimiento-card-universidad .card {
+      max-width: 150px; }
+  .reconocimiento-carrusel .carousel-item {
+    height: 300px; } }
 
 @media screen and (max-width: 300px) {
   header a {
@@ -340,4 +479,6 @@ header {
     height: 34px; }
   .carrusel {
     margin-left: 5%;
-    margin-right: 5%; } }
+    margin-right: 5%; }
+  .reconocimiento-carrusel .carousel-control-next, .reconocimiento-carrusel .carousel-control-prev {
+    margin-top: 45%; } }

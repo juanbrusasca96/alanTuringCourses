@@ -60,7 +60,7 @@ header{
     }
 
     .dropdown-item.active, .dropdown-item:active {
-        color: $colorPrimarioTexto;
+        color: rgb(206, 105, 87);
         text-decoration: none;
         background-color: $backgroundColorSecundario;
     }
@@ -82,11 +82,21 @@ header{
         color: $colorPrimarioTexto;
     }
 
+    .navbar-brand{
+        &:focus{
+            color: $colorPrimarioTexto;
+        }
+    }
+
     nav{
         .nav-imagen{
-            width: 10%;
+            width: 8%;
             margin-left: 1%;
         }
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover{
+        color: $backgroundColor;
     }
 }
 
@@ -367,6 +377,146 @@ header{
     
 }
 
+.texto-general{
+    margin: 1%;
+    color: $colorPrimarioTexto;
+    background-color: $backgroundColorTerciario;
+    p{
+        margin: 2%;
+    }
+}
+
+.biografia-card{
+    display: grid;
+    grid-template-areas: 
+    "texto imagen";
+    .biografia-card-texto{
+        grid-area: texto;
+    }
+    .card{
+        margin: 2%;
+        grid-area: imagen;
+        background-color: $backgroundColorTerciario;
+        border: 1px solid $colorPrimarioTexto;
+        img{
+            max-width: 150px;
+            max-height: 160px;
+        }
+        .card-body{
+            max-width: 150px;
+        }
+    }
+}
+
+.logros-card{
+    display: grid;
+    grid-template-areas: 
+    "imagen texto";
+    .logros-card-texto{
+        grid-area: texto;
+    }
+    .card{
+        margin: 2%;
+        grid-area: imagen;
+        background-color: $backgroundColorTerciario;
+        border: 1px solid $colorPrimarioTexto;
+        img{
+            max-width: 300px;
+            max-height: 310px;
+        }
+        .card-body{
+            max-width: 300px;
+        }
+    }
+}
+
+.reconocimiento-card-casa{
+    display: grid;
+    grid-template-areas: 
+    "texto imagen";
+    .reconocimiento-card-casa-texto{
+        grid-area: texto;
+    }
+    .card{
+        margin: 2%;
+        grid-area: imagen;
+        background-color: $backgroundColorTerciario;
+        border: 1px solid $colorPrimarioTexto;
+        img{
+            max-width: 200px;
+            max-height: 210px;
+        }
+        .card-body{
+            max-width: 200px;
+        }
+    }
+}
+
+.reconocimiento-card-universidad{
+    display: grid;
+    grid-template-areas: 
+    "imagen texto";
+    .reconocimiento-card-universidad-texto{
+        grid-area: texto;
+    }
+    .card{
+        margin: 2%;
+        grid-area: imagen;
+        background-color: $backgroundColorTerciario;
+        border: 1px solid $colorPrimarioTexto;
+        img{
+            max-width: 150px;
+            max-height: 200px;
+        }
+        .card-body{
+            max-width: 150px;
+        }
+    }
+}
+
+.reconocimiento-carrusel{
+    max-height: 633px;
+    margin-top: 2%;
+    background-image: url("../fotos/reconocimiento-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $colorPrimarioTexto;
+    h2{
+        margin: 2%;
+    }
+    .carousel-item{
+        height: 500px;
+        max-width: 900px;
+        margin-top: 3%;
+        img{
+            max-width: 900px;
+            max-height: 400px;
+        }
+    }
+
+    .carousel-inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-control-prev{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .carousel-control-next{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .carousel-caption{
+        color: $colorPrimarioTexto;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $colorPrimarioTexto;
+    }
+}
+
 @media screen and (max-width: 987px){
     .video{
         .video-titulos{
@@ -434,6 +584,22 @@ header{
             display: block!important;
         }
     }
+
+    .reconocimiento-carrusel{
+        .carousel-item{
+            height: 410px;
+        }
+
+        .carousel-control-next, .carousel-control-prev {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30%;
+        }
+
+        .d-none {
+            display: block!important;
+        }
+    }
 }
 
 @media screen and (max-width: 570px){
@@ -478,6 +644,52 @@ header{
         display: flex;
         flex-direction: column;
     }
+
+    .logros-card{
+        display: flex;
+        flex-direction: column;
+        .card{
+            max-width: 300px;
+        }
+    }
+
+    .reconocimiento-carrusel{
+        .carousel-item{
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .biografia-card{
+        display: flex;
+        flex-direction: column;
+        .card{
+            max-width: 150px;
+        }
+    }
+
+    .reconocimiento-card-casa{
+        display: flex;
+        flex-direction: column;
+        .card{
+            max-width: 200px;
+        }
+    }
+
+    .reconocimiento-card-universidad{
+        display: flex;
+        flex-direction: column;
+        .card{
+            max-width: 150px;
+        }
+    }
+
+    .reconocimiento-carrusel{
+        .carousel-item{
+            height: 300px;
+        }
+    }
 }
 
 @media screen and (max-width: 300px){
@@ -501,5 +713,11 @@ header{
     .carrusel{
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .reconocimiento-carrusel{
+        .carousel-control-next, .carousel-control-prev {
+            margin-top: 45%;
+        }
     }
 }
