@@ -1,5 +1,6 @@
 body {
-  background-color: #a77009; }
+  background-color: #a77009;
+  font-family: 'Poppins', sans-serif; }
 
 header {
   display: grid;
